@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px;
     align-items: center;
 }
 
@@ -27,26 +27,26 @@ body {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 
 .header-text h2 {
-    font-size: 24px;
+    font-size: 32px;
     color: #3971B8;
     margin: 0;
     font-weight: 700;
 }
 
 .header-text p {
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
     margin: 2px 0 0 0;
 }
 
 .hero-section {
-    max-width: 600px;
+    max-width: 750px;
     width: 100%;
     text-align: center;
     animation: fadeIn 0.6s ease-in-out;
@@ -59,9 +59,9 @@ body {
 }
 /* product vision styling */
 .product-vision {
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .pv-header {
@@ -85,10 +85,10 @@ body {
   background: #fff;
   border: 2px solid #3971B8;
   border-radius: 12px;
-  padding: 18px 22px;
+  padding: 25px 30px;
   color: #333;
-  line-height: 1.6;
-  margin-top: 12px;
+  line-height: 1.8;
+  margin-top: 18px;
   box-shadow: 0 6px 18px rgba(57,113,184,0.06);
 }
 
@@ -131,7 +131,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 0;
 }
 
@@ -165,19 +165,19 @@ body {
     display: inline-block;
     background-color: #3971B8;
     color: white;
-    padding: 8px 20px;
+    padding: 12px 30px;
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 0.5px;
 }
 
 .main-title {
-    font-size: 72px;
+    font-size: 90px;
     font-weight: 700;
     color: #222;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     line-height: 1.1;
 }
 
@@ -189,33 +189,33 @@ body {
     display: inline-block;
     background-color: #F6E6A5;
     color: #222;
-    padding: 16px 60px;
+    padding: 20px 80px;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     box-shadow: 0 4px 15px rgba(253, 216, 53, 0.3);
 }
 
 .intro-text {
     color: #666;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 520px;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .section {
       max-width: 1200px;
       text-align: center;
-      margin-top: 18%;
+      margin-top: 22%;
     }
  
     .section-title {
-      font-size: 2.4rem;
+      font-size: 3rem;
       font-weight: 800;
       color: #3971B8;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
  
     .section-title .star {
@@ -225,27 +225,27 @@ body {
     }
  
     .section-subtitle {
-      font-size: 0.95rem;
+      font-size: 1.2rem;
       color: #555;
-      margin-bottom: 48px;
+      margin-bottom: 60px;
       font-weight: 400;
     }
  
     .team-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 40px;
     }
  
     .team-card {
       background: #fff;
       border: 2px solid #3971B8;
       border-radius: 18px;
-      padding: 48px 80px 40px;
+      padding: 60px 100px 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 18px;
       box-shadow: 0 4px 18px rgba(74, 108, 247, 0.08);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -256,8 +256,8 @@ body {
     }
  
     .avatar {
-      width: 110px;
-      height: 110px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       background-color: #3971B8;
       overflow: hidden;
@@ -285,19 +285,69 @@ body {
     }
  
     .member-name {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 800;
       color: #3971B8;
     }
  
     .member-role {
-      font-size: 0.95rem;
+      font-size: 1.1rem;
       color: #666;
       font-weight: 500;
     }
  
     @media (max-width: 680px) {
       .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+/* ontwerpvraag section container */
+.design-question-section {
+    max-width: 900px;
+    min-width: 650px;
+    margin: 80px auto;
+    text-align: left;
+}
+
+/* outer yellow wrapper */
+.dq-outer {
+    background: #f6e6a5;
+    border-radius: 40px;
+    padding: 15px;
+    position: relative;
+    rotate: calc(1deg);
+}
+
+/* blue inner card */
+.dq-card {
+    position: relative;
+    background: #3971B8;
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 28px;
+    overflow: hidden;
+    rotate: calc(-1deg);
+}
+
+.dq-label {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    background: #f6e6a5;
+    color: #3971B8;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.dq-card p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+
     }
  
     @media (max-width: 420px) {
@@ -345,31 +395,31 @@ body {
     max-width: 1200px;
     width: 100%;
     text-align: center;
-    margin: 100px auto;
+    margin: 120px auto;
 }
 
 .title-underline {
-    width: 60px;
-    height: 4px;
+    width: 80px;
+    height: 5px;
     background: #F6E6A5;
     border-radius: 2px;
-    margin: 10px auto 48px;
+    margin: 15px auto 60px;
 }
 
 .values-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    gap: 32px;
 }
 
 .value-card {
     border: 2px solid #3971B8;
     border-radius: 18px;
-    padding: 28px 16px 24px;
+    padding: 35px 20px 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     background: #fff;
     box-shadow: 0 4px 18px rgba(74, 108, 247, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -381,8 +431,8 @@ body {
 }
 
 .icon-wrap {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 16px;
     overflow: hidden;
     flex-shrink: 0;
@@ -397,16 +447,16 @@ body {
 }
 
 .value-name {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 800;
     color: #3971B8;
 }
 
 .value-desc {
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     color: #666;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
 }
 
@@ -424,32 +474,32 @@ body {
 
 /* Samenwerking Section */
 .collaboration-section {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
     text-align: center;
-    margin: 100px auto;
+    margin: 120px auto;
 }
 
 .outer-card {
     border: 2px solid #3971B8;
     border-radius: 20px;
-    padding: 36px;
+    padding: 48px;
     background: #fff;
 }
 
 .items-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .item-card {
     border: 1.5px solid #d0d8f5;
     border-radius: 14px;
-    padding: 18px 20px;
+    padding: 24px 28px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     text-align: left;
     background: #fff;
     transition: box-shadow 0.2s ease;
@@ -476,13 +526,42 @@ body {
 }
 
 .item-text {
-    font-size: 0.84rem;
+    font-size: 1rem;
     color: #333;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 @media (max-width: 520px) {
     .items-grid { grid-template-columns: 1fr; }
     .outer-card { padding: 24px; }
+}
+
+/* Vierkant Background */
+.vierkant-background {
+    width: 350px;
+    height: 350px;
+    background-color: #3971B8;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.vierkant-background-2 {
+    width: 250px;
+    height: 250px;
+    background-color: #F6E6A5;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 100px 0 0 0;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
 }
