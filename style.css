@@ -274,18 +274,6 @@ body {
     z-index: 1;
 }
 
-.randvoorwaarden-shell::after {
-    content: "";
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    bottom: -18px;
-    height: 40px;
-    border-radius: 0 0 30px 30px;
-    background: rgba(246, 230, 165, 0.45);
-    z-index: -1;
-}
-
 .randvoorwaarden-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
