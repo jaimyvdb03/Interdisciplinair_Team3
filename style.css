@@ -16,7 +16,6 @@ body {
 
 .top-header {
     width: 100%;
-    padding: 25px 0;
     margin-bottom: auto;
 }
 
@@ -148,6 +147,114 @@ body {
 .info-boxes-grid .info-box:nth-child(3) {
   grid-column: 2;
   grid-row: 2;
+}
+
+/* Scope & Sprintdoel Section */
+.scope-section {
+    max-width: 1100px;
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.scope-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.scope-card {
+    background: #fff;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 28px 30px;
+    box-shadow: 0 6px 18px rgba(57, 113, 184, 0.06);
+}
+
+.scope-card.scope-in {
+    border-color: #3971B8;
+}
+
+.scope-card.scope-out {
+    border-color: #d9d9d9;
+}
+
+.scope-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.scope-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.scope-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.scope-badge.in {
+    background: #3971B8;
+    color: #fff;
+}
+
+.scope-badge.out {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.scope-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.scope-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.scope-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.scope-icon.in {
+    background: rgba(57, 113, 184, 0.15);
+    color: #3971B8;
+}
+
+.scope-icon.out {
+    background: rgba(0, 0, 0, 0.05);
+    color: #999;
+}
+
+@media (max-width: 820px) {
+    .scope-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @keyframes fadeIn {
@@ -547,7 +654,7 @@ body {
     opacity: 0.1;
     position: absolute;
     right: 0;
-    top: 55%;
+    top: 55vh;
     transform: translateY(-50%);
 }
 
@@ -562,6 +669,6 @@ body {
     position: absolute;
     left: 0;
     margin-left: 10px;
-    top: 40%;
+    top: 40vh;
     transform: translateY(-50%);
 }
