@@ -187,7 +187,7 @@
                 <div class="dq-outer">
                     <div class="dq-card">
                         <span class="dq-label"><strong>ONTWERPVRAAG</strong></span>
-                        <p>Hoe kunnen we laaggeletterden ondersteunen bij het solicitatie proces?</p>
+                        <p>Hoe kunnen we laaggeletterde migranten ondersteunen bij het sollicitatieproces?</p>
                     </div>
                 </div>
             </section>
@@ -346,5 +346,93 @@
                 </div>
             </div>
         </section>
+
+        <!-- Sprints Section -->
+        <section class="sprints-section">
+            <div class="sprints-title-dropdown">
+                <select id="sprintSelect" class="sprints-dropdown">
+                    <option value="0">Sprint 0</option>
+                    <option value="1">Sprint 1</option>
+                    <option value="2">Sprint 2</option>
+                    <option value="3">Sprint 3</option>
+                    <option value="4">Sprint 4</option>
+                    <option value="5">Sprint 5</option>
+                </select>
+            </div>
+            <div class="sprints-subtitle" id="sprintSubtitle">Datum: 23 februari t/m 4 maart 2026</div>
+
+            <div id="sprintContent" class="sprints-content">
+                <!-- Sprint 0 -->
+                <div class="sprint-item active" id="sprint-0">
+                    <p>Sprint 0 begon met een hackathon waarbij we in een dag een demo app hebben gebouwd die het telefoongedrag van een kind bijhoudt en notificaties stuurt naar de ouder en gepresenteerd. Daarna volgden er workshops met potentiele partners, waarbij elk teamlid apart met een partner in gesprek ging. De inzichten die daaruit kwamen hebben we de volgende dag samen besproken, wat uiteindelijk leidde tot twee interessante doelgroepen: </p>
+                    <br>
+                    <p>laaggeletterden en eenzame ouderen. Voor beide doelgroepen hebben we een onepager en een presentatie gemaakt en feedback opgehaald via een feedbackcarrousel. Na al deze activiteiten hebben we als team democratisch gekozen om verder te gaan met laaggeletterden, waarna we meteen een nieuwe onepager hebben opgesteld die deze richting weerspiegelt.</p>
+                </div>
+                
+                <!-- Sprint 1 -->
+                <div class="sprint-item" id="sprint-1">
+                    <p>We zijn de sprint op woensdag 4 maart begonnen met het bepalen van de praktijkpartners die ons het beste kunnen helpen met het vinden van een oplossing voor het verzachten van de effecten van laaggeletterdheid. We hadden besloten dat Reint van der Vlis van Stichting Lezen en Schrijven en Tanja Ubert van de Hogeschool Rotterdam voor ons de geschikte partners zijn. Tanja heeft ons verzoek geaccepteerd, maar voor Reint was er niet genoeg plek voor hem om met ons intensief mee te werken. Hij is wel open voor vragen die we voor hem hebben. </p>
+                    <br>
+                    <p>Op de workshop van maandag 9 maart hebben we een workshop gehad over hoe we de waarden van directe en indirecte stakeholders in kaart kunnen brengen, waardeconflicten die kunnen onstaan, hoe we deze kunnen balanceren en hoe we deze waarden kunnen omzetten naar ontwerprichtlijnen. Daarna hebben we een workshop gehad over ons profesionele en persoonlijke identiteit en uit welke onderdelen deze bestaan. We zijn ook begonnen met het maken van een persoonlijk ontwikkelplan, waarbij we drie leerdoelen moeten opstellen die we tijdens semester 6 moeten halen. </p>
+                    <br>
+                    <p>Op woensdag 11 maart hebben we een brainstormsessie gehad over de specifieke doelgroep van laaggeletterden waarvoor we een oplossing willen zoeken. Hiervoor heeft iedereen een klein onderzoekje uitgevoerd om te delen met de rest van de groep. Uiteindelijk hebben we gekozen voor laaggeletterde werkzoekenden tussen 25 en 45 jaar met een migratieachtergrond. Hierna hebben we het interview tussen Reint en Team Kameleon kunnen bijwonen, waarbij we waardevolle informatie hebben gekregen over laaggeletterden en hoe Stichting Lezen en Schrijven ze helpt met het vinden van taallessen. Wat Reint het belangrijkste vindt is vinden van een oplossing waar de focus wordt gelegd op het laten leren (in plaats van het laten doen) en het toegangelijker maken van informatie voor laaggeletterden. Een oplossing voor het laten vinden van al bestaande hulpmiddelen is volgens hem ook een heel goed idee. </p>
+                    <br>
+                    <p>Op maandag 16 maart hebben we een workshop gehad over hoe we de normen en waarden van onze doelgroep kunnen bepalen, het verschil tussen opzoeken, uitzoeken en onderzoeken en hoe we kunnen onderzoeken door te experimenteren. Ook hebben we geleerd hoe we aannames over onze doelgroep maken en hoe we deze kunnen testen.Hierna hebben we een workshop gehad over de verschillende perspectieven en denkmanieren die mensen hebben aan de hand van DISC (Dominante, Inspirerende, Stabiele en Consciëntieuze stijl) </p>
+                    <br>
+                    <p> Tijdens de tweede workshop van maandag heeft een deel van de groep een gesprek gehad met Tanja, waar we het hebben gehad over de effecten van laaggeletterdheid, hoe mensen ermee omgaan, de oplossingen die al bestaan en mogelijke contactpersonen die we kunnen spreken voor meer informatie of ideeën. Goede mgelijke oplossingen voor haar zijn oplossingen met beeld en geluid, manieren vinden voor werkgevers om te ontdekken of iemand laaggeletterd is en informatie over waar iemand terecht kan voor hulp. </p>
+                </div>
+                
+                <!-- Sprint 2 -->
+                <div class="sprint-item" id="sprint-2">
+                    <p>Sprint nog niet begonnen</p>
+                </div>
+                
+                <!-- Sprint 3 -->
+                <div class="sprint-item" id="sprint-3">
+                    <p>Sprint nog niet begonnen</p>
+                </div>
+                
+                <!-- Sprint 4 -->
+                <div class="sprint-item" id="sprint-4">
+                    <p>Sprint nog niet begonnen</p>
+                </div>
+                
+                <!-- Sprint 5 -->
+                <div class="sprint-item" id="sprint-5">
+                    <p>Sprint nog niet begonnen</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Handle sprint dropdown
+            const sprintSelect = document.getElementById('sprintSelect');
+            const allSprintItems = document.querySelectorAll('.sprint-item');
+            const sprintSubtitle = document.getElementById('sprintSubtitle');
+            // Datum per sprint
+            const sprintDates = {
+                0: '23 februari t/m 4 maart 2026',
+                1: '5 maart t/m 18 maart 2026',
+                2: '19 maart t/m 1 april 2026',
+                3: '2 april t/m 15 april 2026',
+                4: '6 mei t/m 20 mei2026',
+                5: '21 mei t/m 6 juni 2026'
+            };
+
+            sprintSelect.addEventListener('change', function() {
+                const selectedSprint = this.value;
+                // Hide all sprint items
+                allSprintItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                // Show selected sprint item
+                const activeItem = document.getElementById('sprint-' + selectedSprint);
+                if (activeItem) {
+                    activeItem.classList.add('active');
+                }
+                // Update subtitle
+                sprintSubtitle.textContent = 'Datum: ' + (sprintDates[selectedSprint] || 'datum nog invoeren');
+            });
+        </script>
     </body>
 </html>

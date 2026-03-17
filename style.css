@@ -352,15 +352,20 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    html, body {
+        min-height: 100vh;
+        height: 100%;
+        overflow-y: auto;
     }
-}
-
-.badge {
-    display: inline-block;
-    background-color: #3971B8;
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 0 0;
+        align-items: center;
+    }
     color: white;
     padding: 12px 30px;
     border-radius: 25px;
@@ -758,4 +763,103 @@ body {
     margin-left: 10px;
     top: 40vh;
     transform: translateY(-50%);
+}
+
+/* Sprints Section */
+.sprints-section {
+    .sprints-subtitle {
+        font-size: 16px;
+        color: #e0e6f6;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: -10px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+    }
+    width: 100vw;
+    margin: 100px calc(-50vw + 50%);
+    background: linear-gradient(135deg, #3971B8 0%, #2d5a8f 100%);
+    border-radius: 12px;
+    padding: 50px 40px 0 40px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.sprints-title-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sprints-dropdown {
+    padding: 0;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 30px;
+}
+
+.sprints-dropdown:hover {
+    opacity: 0.8;
+}
+
+.sprints-dropdown:focus {
+    outline: none;
+    opacity: 0.8;
+}
+
+.sprints-dropdown option {
+    background-color: #3971B8;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sprints-content {
+    min-height: 300px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-bottom: 20px;
+}
+
+.sprint-item {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    line-height: 1.8;
+    font-size: 16px;
+    color: white;
+}
+
+.sprint-item.active {
+    display: block;
+}
+
+.sprint-item p {
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .sprints-section {
+        padding: 30px 20px;
+    }
+
+    .sprints-dropdown {
+        font-size: 24px;
+    }
+
+    .sprint-item {
+        font-size: 14px;
+    }
 }
