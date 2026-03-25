@@ -14,22 +14,152 @@ body {
     align-items: center;
 }
 
+
 .top-header {
     width: 100%;
     margin-bottom: auto;
+    background: transparent;
+    margin-top: 0;
 }
 
-.header-content {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  margin-top: 1vh;
+}
+
+.header-content.new-header {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: flex-start;
+    padding: 0 0 24px 0;
+    position: relative;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+.logo-badge {
+    display: flex;
+    align-items: center;
 }
+
+.logo-square {
+    width: 70px;
+    height: 70px;
+    background: #3971B8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #f6e6a5;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+
+.header-title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 32px;
+}
+
+.header-title {
+    color: #3971B8;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.header-subtitle {
+    color: #888;
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.header-badges {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: auto;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(57,113,184,0.06);
+    letter-spacing: 0.5px;
+    border: none;
+}
+.badge-blue {
+    background: #3971B8;
+    color: #fff;
+    border: none;
+}
+.badge-yellow {
+    background: #fff;
+    color: #3971B8;
+    border: 2px solid #f6e6a5;
+}
+
+/* Dropdown menu styling */
+.dropdown-nav {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    z-index: 10;
+}
+.dropbtn {
+    background-color: #3971B8;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(57,113,184,0.08);
+    transition: background 0.2s;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #285185;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(57,113,184,0.12);
+    border-radius: 6px;
+    right: 0;
+    margin-top: 8px;
+}
+.dropdown-content a {
+    color: #3971B8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.dropdown-content a:hover {
+    background-color: #f0f4fa;
+}
+.dropdown-nav:hover .dropdown-content, .dropdown-nav:focus-within .dropdown-content {
+    display: block;
+}
+
+
+/* Oude logo-styling verwijderd, want vervangen door logo-square */
 
 .header-text h2 {
     font-size: 32px;
