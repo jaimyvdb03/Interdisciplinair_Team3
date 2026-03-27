@@ -19,7 +19,16 @@
                     <span class="header-subtitle">Hogeschool Rotterdam</span>
                 </div>
                 <div class="header-badges ">
-                    <span class="badge badge-blue">Sprint 1</span>
+                    <div class="dropdown" style="display:inline-block; position:relative;">
+                        <button class="badge badge-blue" id="sprintDropdownBtn">Sprint 0</button>
+                        <div id="sprintDropdownMenu" class="dropdown-menu" style="display:none; position:absolute; left:0; top:100%; min-width:120px; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:1000; border-radius:8px; overflow:hidden;">
+                            <a href="Sprints/sprint_1.html" class="dropdown-item" style="display:block; padding:8px 16px; color:#222; text-decoration:none; opacity:0; transform:translateY(-10px);">Sprint 1</a>
+                            <a href="Sprints/sprint_2.html" class="dropdown-item" style="display:block; padding:8px 16px; color:#222; text-decoration:none; opacity:0; transform:translateY(-10px);">Sprint 2</a>
+                            <a href="Sprints/sprint_3.html" class="dropdown-item" style="display:block; padding:8px 16px; color:#222; text-decoration:none; opacity:0; transform:translateY(-10px);">Sprint 3</a>
+                            <a href="Sprints/sprint_4.html" class="dropdown-item" style="display:block; padding:8px 16px; color:#222; text-decoration:none; opacity:0; transform:translateY(-10px);">Sprint 4</a>
+                            <a href="Sprints/sprint_5.html" class="dropdown-item" style="display:block; padding:8px 16px; color:#222; text-decoration:none; opacity:0; transform:translateY(-10px);">Sprint 5</a>
+                        </div>
+                    </div>
                     <span class="badge badge-yellow">Q1 2026</span>
                 </div>
             </div>
@@ -28,6 +37,63 @@
         <div class="hero-section">
 
             <script src="header-scroll.js"></script>
+                    <script>
+                    // Dropdown functionaliteit met animatie voor Sprint button
+                    const sprintDropdownBtn = document.getElementById('sprintDropdownBtn');
+                    const sprintDropdownMenu = document.getElementById('sprintDropdownMenu');
+                    if (sprintDropdownBtn && sprintDropdownMenu) {
+                        const items = sprintDropdownMenu.querySelectorAll('.dropdown-item');
+                        function showDropdownAnimated() {
+                            sprintDropdownMenu.style.display = 'block';
+                            items.forEach((item, i) => {
+                                item.style.transition = 'opacity 0.35s cubic-bezier(.4,2,.6,1), transform 0.35s cubic-bezier(.4,2,.6,1)';
+                                item.style.opacity = '0';
+                                item.style.transform = 'translateY(-10px)';
+                            });
+                            setTimeout(() => {
+                                items.forEach((item, i) => {
+                                    setTimeout(() => {
+                                        item.style.opacity = '1';
+                                        item.style.transform = 'translateY(0)';
+                                    }, i * 90);
+                                });
+                            }, 10);
+                        }
+                        function hideDropdownAnimated() {
+                            items.forEach((item, i) => {
+                                setTimeout(() => {
+                                    item.style.opacity = '0';
+                                    item.style.transform = 'translateY(-10px)';
+                                }, (items.length - i - 1) * 50);
+                            });
+                            setTimeout(() => {
+                                sprintDropdownMenu.style.display = 'none';
+                            }, items.length * 50 + 200);
+                        }
+                        let open = false;
+                        sprintDropdownBtn.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            if (!open) {
+                                showDropdownAnimated();
+                            } else {
+                                hideDropdownAnimated();
+                            }
+                            open = !open;
+                        });
+                        // Sluit dropdown als je buiten klikt
+                        document.addEventListener('click', function(e) {
+                            if (!sprintDropdownMenu.contains(e.target) && e.target !== sprintDropdownBtn && open) {
+                                hideDropdownAnimated();
+                                open = false;
+                            }
+                        });
+                        // Reset animatie bij laden
+                        items.forEach(item => {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(-10px)';
+                        });
+                    }
+                    </script>
             <div class="badge">Team Presentatie</div>
             <h1 class="main-title">Team <span class="highlight">Tom</span></h1>
             <div class="cta-button">Team Op Missie</div>
@@ -423,6 +489,29 @@
         </section>
 
         <script>
+                    // Sprint 0 button toont/verbergt dropdown
+                    const sprintDropdownBtn = document.getElementById('sprintDropdownBtn');
+                    const sprintPagesDropdown = document.getElementById('sprintPagesDropdown');
+                    if (sprintDropdownBtn && sprintPagesDropdown) {
+                        sprintDropdownBtn.addEventListener('click', function() {
+                            if (sprintPagesDropdown.style.display === 'none') {
+                                sprintPagesDropdown.style.display = 'inline';
+                                sprintPagesDropdown.focus();
+                            } else {
+                                sprintPagesDropdown.style.display = 'none';
+                            }
+                        });
+                        sprintPagesDropdown.addEventListener('change', function() {
+                            const url = this.value;
+                            if (url) {
+                                window.location.href = url;
+                            }
+                        });
+                        // Verberg dropdown als focus verloren
+                        sprintPagesDropdown.addEventListener('blur', function() {
+                            setTimeout(() => { sprintPagesDropdown.style.display = 'none'; }, 150);
+                        });
+                    }
             // Handle sprint dropdown
             const sprintSelect = document.getElementById('sprintSelect');
             const allSprintItems = document.querySelectorAll('.sprint-item');
