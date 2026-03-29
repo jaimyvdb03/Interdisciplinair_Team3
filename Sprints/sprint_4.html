@@ -3,33 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sprint 4</title>
+	<title>Sprint 1</title>
+	<script src="../sprint-dropdown.js"></script>
+	<script src="header-scroll.js"></script>
 	<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-	<header class="top-header">
-		<div class="header-content">
-			<img src="../Images/Logo.png" alt="Team Tom Logo" class="logo">
-			<div class="header-text">
-				<h2>One-pager</h2>
-				<p>Hogeschool Rotterdam</p>
-			</div>
-			<div class="dropdown-nav">
-				<button class="dropbtn">Sprints &#x25BC;</button>
-				<div class="dropdown-content">
-					<a href="sprint_1.html">Sprint 1</a>
-					<a href="sprint_2.html">Sprint 2</a>
-					<a href="sprint_3.html">Sprint 3</a>
-					<a href="sprint_4.html">Sprint 4</a>
-					<a href="sprint_5.html">Sprint 5</a>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-		<h1>Sprint 4</h1>
-		<h2>Scope</h2>
-		<p>Beschrijf hier de scope van sprint 4.</p>
-	</main>
+<body class="sprint1-page">
+	 <header class="top-header sticky">
+            <div class="header-content new-header">
+                <a href="../index.html" class="logo-badge">
+                    <div class="logo-square">
+                        <span class="logo-text">TOM</span>
+                    </div>
+                </a>
+                <div class="header-title-group">
+                    <span class="header-title">One-pager</span>
+                    <span class="header-subtitle">Hogeschool Rotterdam</span>
+                </div>
+                <div class="header-badges ">
+                    <div class="dropdown">
+                        <button class="badge badge-blue" id="sprintDropdownBtn">Sprints</button>
+                        <div id="sprintDropdownMenu" class="dropdown-menu">
+                            <a href="sprint_1.html" class="dropdown-item">Sprint 1</a>
+                            <a href="sprint_2.html" class="dropdown-item">Sprint 2</a>
+                            <a href="sprint_3.html" class="dropdown-item">Sprint 3</a>
+                            <a href="sprint_4.html" class="dropdown-item">Sprint 4</a>
+                            <a href="sprint_5.html" class="dropdown-item">Sprint 5</a>
+                        </div>
+                    </div>
+                    <span class="badge badge-yellow">Q1 2026</span>
+                </div>
+            </div>
+        </header>
+    <main class="sprint-main">
+        <section class="sprint1-hero">
+            <h1 class="sprint1-title">SPRINT <span class="sprint1-title-chip">4</span></h1>
+            <div class="sprint1-divider" aria-hidden="true">
+                <span></span>
+                <i></i>
+                <span></span>
+            </div>
+            <h2 class="sprint1-subtitle">Exploratie &amp; Fundamenten Leggen</h2>
+            <p class="sprint1-description">De eerste stap in onze sprint: desk research inzichten, ontwerpvraag, pact-analyse en stakeholdermap.</p>
+
+            <div class="sprint1-cards">
+                <article class="sprint1-card sprint1-card-period">
+                    <p class="sprint1-card-label highlight-blue">
+                        <img src="../images/icons/Container_afspraken_secondairy.png" alt="Periode icoon" class="sprint1-card-label-icon">
+                        Periode
+                    </p>
+                    <p class="sprint1-card-value">Week 12-13</p>
+                    <p class="sprint1-card-note">6 mei t/m 20 mei 2026</p>
+                </article>
+
+                <article class="sprint1-card sprint1-card-focus">
+                    <p class="sprint1-card-label highlight-yellow">
+						<img src="../images/icons/Container_rocket_secondairy.png" alt="Focus icoon" class="sprint1-card-label-icon">
+						Focus
+					</p>
+                    <p class="sprint1-card-value">Onderzoek</p>
+                    <p class="sprint1-card-note highlight-yellow">User research &amp; analyse</p>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

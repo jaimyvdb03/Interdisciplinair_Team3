@@ -20,12 +20,12 @@ body {
     margin-bottom: auto;
     background: transparent;
     margin-top: 0;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .top-header.scrolled {
-    background: rgba(235, 234, 234, 0.92); /* donkerblauw met transparantie */
+    background: rgba(235, 234, 234, 0.96);
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .sticky {
@@ -47,6 +47,7 @@ body {
 .logo-badge {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo-square {
@@ -543,20 +544,29 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
-    html, body {
-        min-height: 100vh;
-        height: 100%;
-        overflow-y: auto;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0 0 0;
-        align-items: center;
-    }
+}
+
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 0;
+    align-items: center;
+}
+
+.hero-section .badge {
     color: white;
     padding: 12px 30px;
     border-radius: 25px;
@@ -856,6 +866,185 @@ body {
 
 @media (max-width: 780px) {
     .values-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Sprint 1 hero layout */
+body.sprint1-page {
+    background: #ffffff;
+    padding: 40px 30px 0;
+}
+
+
+.sprint1-hero {
+    max-width: 980px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    margin-bottom: 30vh;
+}
+
+.sprint1-title {
+    margin: 0;
+    color: #3971b8;
+    font-size: clamp(3rem, 12vw, 6.2rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.sprint1-title-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.4em;
+    padding: 0.22em 0.34em;
+    margin-left: 0.1em;
+    background: #f6e6a5;
+    border-radius: 0.3em;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.sprint1-divider {
+    margin: 26px auto 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sprint1-divider span {
+    display: block;
+    width: 62px;
+    height: 4px;
+    border-radius: 4px;
+    background: #3971b8;
+}
+
+.sprint1-divider i {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f6e6a5;
+}
+
+.sprint1-subtitle {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #2c2e33;
+    font-weight: 700;
+}
+
+.sprint1-description {
+    margin: 14px auto 0;
+    max-width: 760px;
+    color: #666;
+    font-size: 1.12rem;
+    line-height: 1.6;
+}
+
+.sprint1-cards {
+    margin: 48px auto 0;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.sprint1-card {
+    width: 250px;
+    border-radius: 22px;
+    padding: 20px 20px 16px;
+    box-shadow: 0 6px 16px rgba(35, 64, 101, 0.08);
+}
+
+.sprint1-card-period {
+    background: #ffffff;
+    border: 3px solid #3971b8;
+    color: #1f2430;
+}
+
+.sprint1-card-focus {
+    background: #3971b8;
+    border: 3px solid #f6e6a5;
+    color: #ffffff;
+}
+
+.sprint1-card-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.sprint1-card-label-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.sprint1-card-value {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.sprint1-card-note {
+    margin: 10px 0 0;
+    font-size: 0.92rem;
+    opacity: 0.85;
+}
+
+.highlight-blue {
+    color: #3971b8;
+}
+
+.highlight-yellow {
+    color: #f6e6a5;
+}
+
+@media (max-width: 860px) {
+    .sprint-main {
+        padding-top: 150px;
+    }
+
+    .sprint1-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 560px) {
+    body.sprint1-page {
+        padding: 28px 16px 0;
+    }
+
+    .sprint-main {
+        padding-top: 130px;
+    }
+
+    .sprint1-card {
+        width: min(100%, 320px);
+    }
+
+    .sprint1-description {
+        font-size: 1rem;
+    }
+
+    .sprint1-card-value {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 500px) {
