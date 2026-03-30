@@ -913,13 +913,13 @@ body {
 }
 
 /* Sprint 1 hero layout */
-body.sprint1-page {
+body.sprint-hero-page {
     background: #ffffff;
     padding: 40px 30px 0;
 }
 
 
-.sprint1-hero {
+.sprint-hero {
     max-width: 980px;
     width: 100%;
     text-align: center;
@@ -933,7 +933,7 @@ body.sprint1-page {
     margin-bottom: 30vh;
 }
 
-.sprint1-title {
+.sprint-title {
     margin: 0;
     color: #3971b8;
     font-size: clamp(3rem, 12vw, 6.2rem);
@@ -942,7 +942,7 @@ body.sprint1-page {
     line-height: 1;
 }
 
-.sprint1-title-chip {
+.sprint-title-chip {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -954,14 +954,14 @@ body.sprint1-page {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
 }
 
-.sprint1-divider {
+.sprint-divider {
     margin: 26px auto 18px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
 }
 
-.sprint1-divider span {
+.sprint-divider span {
     display: block;
     width: 62px;
     height: 4px;
@@ -969,7 +969,7 @@ body.sprint1-page {
     background: #3971b8;
 }
 
-.sprint1-divider i {
+.sprint-divider i {
     display: block;
     width: 8px;
     height: 8px;
@@ -977,14 +977,14 @@ body.sprint1-page {
     background: #f6e6a5;
 }
 
-.sprint1-subtitle {
+.sprint-subtitle {
     margin: 0;
     font-size: clamp(1.8rem, 3vw, 2.6rem);
     color: #2c2e33;
     font-weight: 700;
 }
 
-.sprint1-description {
+.sprint-description {
     margin: 14px auto 0;
     max-width: 760px;
     color: #666;
@@ -992,7 +992,7 @@ body.sprint1-page {
     line-height: 1.6;
 }
 
-.sprint1-cards {
+.sprint-cards {
     margin: 48px auto 0;
     max-width: 900px;
     display: flex;
@@ -1001,26 +1001,26 @@ body.sprint1-page {
     gap: 20px;
 }
 
-.sprint1-card {
+.sprint-card {
     width: 250px;
     border-radius: 22px;
     padding: 20px 20px 16px;
     box-shadow: 0 6px 16px rgba(35, 64, 101, 0.08);
 }
 
-.sprint1-card-period {
+.sprint-card-period {
     background: #ffffff;
     border: 3px solid #3971b8;
     color: #1f2430;
 }
 
-.sprint1-card-focus {
+.sprint-card-focus {
     background: #3971b8;
     border: 3px solid #f6e6a5;
     color: #ffffff;
 }
 
-.sprint1-card-label {
+.sprint-card-label {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -1031,20 +1031,20 @@ body.sprint1-page {
     margin: 0 0 10px;
 }
 
-.sprint1-card-label-icon {
+.sprint-card-label-icon {
     width: 14px;
     height: 14px;
     object-fit: contain;
 }
 
-.sprint1-card-value {
+.sprint-card-value {
     margin: 0;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.1;
 }
 
-.sprint1-card-note {
+.sprint-card-note {
     margin: 10px 0 0;
     font-size: 0.92rem;
     opacity: 0.85;
