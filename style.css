@@ -678,6 +678,25 @@ body {
     height: 80px;
     background: #4a6cf7;
     border-radius: 16px;
+.stakeholdermap-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+}
+.stakeholdermap-image-wrapper {
+    margin-top: 28px;
+    padding: 0 20px;
+}
+.stakeholdermap-image {
+    width: 100%;
+    max-width: 820px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(57, 113, 184, 0.15);
+    display: block;
+    margin: 0 auto;
+}
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1028,8 +1047,15 @@ body {
 /* Sprint 1 hero layout */
 body.sprint-hero-page {
     background: #ffffff;
+    overflow-x: hidden;
 }
 
+.sprint-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .sprint-hero {
     max-width: 980px;
@@ -1323,11 +1349,11 @@ body.sprint-hero-page {
 }
 
 .persona-prev {
-    left: -70px;
+    left: 20px;
 }
 
 .persona-next {
-    right: -70px;
+    right: 20px;
 }
 
 /* Dots/Indicators */
@@ -1377,62 +1403,93 @@ body.sprint-hero-page {
     gap: 24px;
 }
 
-.persona-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #f0f4fa 0%, #e8eef9 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.persona-profile-card {
+    width: 100%;
     border: 3px solid #3971B8;
+    border-radius: 28px;
+    background: #f5f5f5;
+    padding: 18px;
 }
 
-.persona-avatar svg {
-    width: 70px;
-    height: 70px;
+.persona-avatar {
+    width: 100%;
+    height: 230px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.persona-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.persona-photo-badge {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #3971B8 url("images/icons/Container_User.png") center/contain no-repeat;
+    border: 3px solid #fff;
+}
+
+.persona-quote {
+    margin-top: 14px;
+    background: #e8e5da;
+    border-radius: 14px;
+    color: #333;
+    padding: 14px 16px;
+    font-style: italic;
+    line-height: 1.45;
 }
 
 .persona-info-card {
-    background: #fff;
+    background: #f5f5f5;
     border: 2px solid #3971B8;
-    border-radius: 16px;
+    border-radius: 28px;
     padding: 20px 24px;
     width: 100%;
     text-align: left;
 }
 
 .info-label {
-    font-size: 1.1rem;
+    font-size: 2.05rem;
     font-weight: 700;
     color: #3971B8;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e5d38a;
 }
 
 .info-details {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .detail-row {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .detail-label {
-    font-size: 0.75rem;
+    font-size: 1.02rem;
     font-weight: 700;
     color: #3971B8;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
 }
 
 .detail-value {
-    font-size: 0.95rem;
+    font-size: 1.02rem;
     color: #333;
     font-weight: 500;
+    text-align: right;
 }
 
 .persona-right {
@@ -1454,37 +1511,43 @@ body.sprint-hero-page {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 14px;
+    margin: 0 0 14px 0;
     font-weight: 700;
     font-size: 1.05rem;
-    color: #fff;
-    padding: 12px 16px;
-    margin: -20px -24px 14px -24px;
-    border-radius: 14px 14px 0 0;
+    color: #3971B8;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
 }
 
 .persona-card-header.blue {
-    background: #3971B8;
+    background: transparent;
 }
 
 .persona-card-header.green {
-    background: #3971B8;
+    background: transparent;
 }
 
 .persona-card-header.red {
-    background: #3971B8;
+    background: transparent;
 }
 
 .persona-card-header.teal {
-    background: #3971B8;
+    background: transparent;
 }
 
 .persona-card-header.dark-blue {
-    background: #3971B8;
+    background: transparent;
 }
 
 .card-icon {
-    font-size: 1.2rem;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .card-title {
@@ -1512,8 +1575,9 @@ body.sprint-hero-page {
 }
 
 .gedrag-card {
-    border-color: #3971B8;
-    background: #3971B8;
+    border: 3px solid #f6e6a5;
+    background: linear-gradient(135deg, #2c5ea0 0%, #3e72b9 100%);
+    border-radius: 26px;
 }
 
 .persona-card p {
@@ -1547,11 +1611,11 @@ body.sprint-hero-page {
 }
 
 .persona-list.behaviors li {
-    color: #fff;
+    color: #ffffff;
 }
 
 .persona-list.behaviors li::before {
-    color: rgba(255, 255, 255, 0.8);
+    color: #f6e6a5;
 }
 
 .persona-row {
@@ -1566,8 +1630,71 @@ body.sprint-hero-page {
 }
 
 .gedrag-card .persona-card-header {
-    margin-bottom: 16px;
-    padding: 12px 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.achtergrond-card .card-icon {
+    background-image: url("images/icons/Container_User.png");
+}
+
+.behoeften-card .card-icon {
+    background-image: url("images/icons/Container_planet.png");
+}
+
+.tech-card .card-icon {
+    background-image: url("images/icons/Container_phone.png");
+}
+
+.pijnpunten-card .card-icon {
+    background-image: url("images/icons/Container_frown.png");
+}
+
+.plezier-card .card-icon {
+    background-image: url("images/icons/Container_smile.png");
+}
+
+.gedrag-card .card-icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    border-radius: 10px;
+    background-color: #f6e6a5;
+    background-image: url("images/icons/Container_bend_arrow.png");
+    background-size: 18px 18px;
+}
+
+.gedrag-card .persona-card-header {
+    padding: 0;
+}
+
+.gedrag-card .card-title {
+    color: #f6e6a5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    font-size: 1.55rem;
+}
+
+.gedrag-card .card-title::after {
+    content: "";
+    height: 2px;
+    flex: 1;
+    background: rgba(246, 230, 165, 0.65);
+}
+
+.gedrag-card .persona-list.behaviors {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 26px;
+    row-gap: 10px;
+}
+
+.gedrag-card .persona-list.behaviors li:last-child {
+    grid-column: 1 / -1;
 }
 
 @media (max-width: 1024px) {
@@ -1577,11 +1704,11 @@ body.sprint-hero-page {
     }
 
     .persona-prev {
-        left: -55px;
+        left: 12px;
     }
 
     .persona-next {
-        right: -55px;
+        right: 12px;
     }
 
     .persona-slideshow-container {
@@ -1596,14 +1723,13 @@ body.sprint-hero-page {
 
     .persona-left {
         flex: 1;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
-        gap: 32px;
+        gap: 24px;
     }
 
     .persona-info-card {
-        flex: 1;
-        min-width: 200px;
+        width: 100%;
     }
 
     .persona-right {
@@ -1648,13 +1774,33 @@ body.sprint-hero-page {
     }
 
     .persona-avatar {
-        width: 100px;
-        height: 100px;
+        height: 200px;
     }
 
-    .persona-avatar svg {
-        width: 60px;
-        height: 60px;
+    .persona-photo-badge {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-label {
+        font-size: 1.65rem;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 0.95rem;
+    }
+
+    .gedrag-card .card-title {
+        font-size: 1.2rem;
+    }
+
+    .gedrag-card .persona-list.behaviors {
+        grid-template-columns: 1fr;
+    }
+
+    .gedrag-card .persona-list.behaviors li:last-child {
+        grid-column: auto;
     }
 
     .dot {
