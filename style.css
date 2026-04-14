@@ -1432,7 +1432,7 @@ body.sprint-hero-page {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: #3971B8 url("images/icons/Container_User.png") center/contain no-repeat;
+    background: #3971B8 url("Images/icons/Container_User.png") center/contain no-repeat;
     border: 3px solid #fff;
 }
 
@@ -1637,23 +1637,23 @@ body.sprint-hero-page {
 }
 
 .achtergrond-card .card-icon {
-    background-image: url("images/icons/Container_User.png");
+    background-image: url("Images/icons/Container_User.png");
 }
 
 .behoeften-card .card-icon {
-    background-image: url("images/icons/Container_planet.png");
+    background-image: url("Images/icons/Container_planet.png");
 }
 
 .tech-card .card-icon {
-    background-image: url("images/icons/Container_phone.png");
+    background-image: url("Images/icons/Container_phone.png");
 }
 
 .pijnpunten-card .card-icon {
-    background-image: url("images/icons/Container_frown.png");
+    background-image: url("Images/icons/Container_frown.png");
 }
 
 .plezier-card .card-icon {
-    background-image: url("images/icons/Container_smile.png");
+    background-image: url("Images/icons/Container_smile.png");
 }
 
 .gedrag-card .card-icon {
@@ -1662,7 +1662,7 @@ body.sprint-hero-page {
     flex: 0 0 32px;
     border-radius: 10px;
     background-color: #f6e6a5;
-    background-image: url("images/icons/Container_bend_arrow.png");
+    background-image: url("Images/icons/Container_bend_arrow.png");
     background-size: 18px 18px;
 }
 
