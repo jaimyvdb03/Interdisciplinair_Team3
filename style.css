@@ -1,3 +1,133 @@
+/* Blauw vak voor probe-kaarten */
+.probe-kaarten-blauwvak {
+    border: 2.5px solid #3971B8;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(57,113,184,0.08);
+    padding: 22px 28px 18px 28px;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.08rem;
+}
+@media (max-width: 800px) {
+    .probe-kaarten-blauwvak {
+        padding: 14px 8px 12px 8px;
+        max-width: 98vw;
+    }
+}
+/* Probe section styling */
+.probe-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 0 0;
+}
+.probe-content {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.probe-content h3,
+.probe-content h4,
+.probe-content p,
+.probe-content ul {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+.probe-content ul {
+    margin: 0 auto 1.5rem auto;
+    text-align: left;
+}
+.probe-content li {
+    font-size: 1.08rem;
+}
+.probe-vragen {
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 700px;
+}
+.probe-vraag {
+    margin-bottom: 2.5rem;
+    font-size: 1.13rem;
+}
+.probe-afbeeldingen {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 0.7rem;
+    justify-content: center;
+}
+.probe-afbeeldingen img {
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+    padding: 4px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    max-width: 120px;
+    height: auto;
+}
+.probe-afbeeldingen img:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-color: #0078d4;
+}
+@media (max-width: 1000px) {
+    .probe-content {
+        padding: 1.5rem 0.5rem;
+    }
+    .probe-vragen, .probe-content h3, .probe-content h4, .probe-content p, .probe-content ul {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 600px) {
+    .probe-content {
+        padding: 0.7rem 0.1rem;
+    }
+    .probe-afbeeldingen img {
+        max-width: 80px;
+    }
+    .probe-vraag {
+        font-size: 1rem;
+    }
+}
+.probe-vragen {
+    margin-top: 2rem;
+}
+.probe-vraag {
+    margin-bottom: 2.5rem;
+}
+.probe-afbeeldingen {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.probe-afbeeldingen img {
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    background: #fff;
+    padding: 4px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.probe-afbeeldingen img:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-color: #0078d4;
+}
 /* Footer info cards */
 .footer-info {
     width: 100%;
