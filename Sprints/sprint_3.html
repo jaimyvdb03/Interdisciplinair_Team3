@@ -182,6 +182,77 @@
                 </div>
             </div>
         </section>
+
+        <!-- Interview Section -->
+        <section class="interview-section">
+            <h2 class="section-title">Interview</h2>
+            
+            <div class="interview-container">
+                <div class="interview-intro">
+                    <p>Afgelopen sprint hebben wij onder andere contact opgezocht met Tom Adriaanse, beleidsadviseur Taal bij de gemeente Rotterdam. Tijdens de interview hebben wij feedback gevraagd over onze twee probes, aannames, persona's en onze eindproduct concepten. Tom was over het algemeen heel positief over onze producten met kleine puntjes van feedback, advies en mogelijkheden.</p>
+                </div>
+
+                <div class="interview-content">
+                    <div class="interview-item interview-item-expandable">
+                        <div class="interview-header-toggle">
+                            <h3 class="interview-subtitle">Feedback Probe 1: Sollicitatieproces nadoen met nep CV</h3>
+                            <span class="interview-toggle-icon">▼</span>
+                        </div>
+                        <div class="interview-item-content">
+                            <p>Hij vertelde dat laaggeletterde personen vaak al last hebben met basis digitale vaardigheden, en niet weten wat een CV is of hebben. Wat het uploaden daarvan lastig zou maken. Daarom is geadviseerd om de probe bij een gecontroleerde groep uit te voeren met een aantal (digitale basis) vaardigheden hebben. Ook is geadviseerd om contact op te nemen met Rotterdam Rijnmond en werk coaches voor Gem. Rotterdam. Voor rest is aangegeven aan dat dit de juiste manier van testen zou zijn.</p>
+                        </div>
+                    </div>
+
+                    <div class="interview-item interview-item-expandable">
+                        <div class="interview-header-toggle">
+                            <h3 class="interview-subtitle">Feedback Probe 2: Sollicitatie kaarten</h3>
+                            <span class="interview-toggle-icon">▼</span>
+                        </div>
+                        <div class="interview-item-content">
+                            <p>De gemeente heeft gelijkwaardige testen gedaan met hun eigen website maar gebruikte "kinderlijke" plaatjes met wat zij zouden voelen.</p>
+                        </div>
+                    </div>
+
+                    <div class="interview-item interview-item-expandable">
+                        <div class="interview-header-toggle">
+                            <h3 class="interview-subtitle">Feedback Persona's & Aannames</h3>
+                            <span class="interview-toggle-icon">▼</span>
+                        </div>
+                        <div class="interview-item-content">
+                            <p>Het klopt dat mensen inderdaad veel andere leunen binnen hun gemeenschap en dat dit fout gaat wanneer die connectie weg valt. De persona's zijn correct maar er moet rekening gehouden worden met arbeidsmigranten en jongeren net uitschool, omdat laageletterheid al vroeg problemen kan veroorzaken. Hier is nu een vierde persona voor toegevoegd.</p>
+                        </div>
+                    </div>
+
+                    <div class="interview-item interview-item-expandable">
+                        <div class="interview-header-toggle">
+                            <h3 class="interview-subtitle">Feedback Concepten</h3>
+                            <span class="interview-toggle-icon">▼</span>
+                        </div>
+                        <div class="interview-item-content">
+                            <ul class="interview-list">
+                                <li><span class="interview-bullet">•</span> Learning app wekte veel enthousiasme</li>
+                                <li><span class="interview-bullet">•</span> Visuele CV maker voor laaggeletterde personen werd gemeld dat drag & drop makkelijk klinkt als je al tenmiste basis vaardigheden hebt.</li>
+                                <li><span class="interview-bullet">•</span> Gebruik website hallowerk voor het afstemmen van website voor toegankelijkheid</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="interview-conclusion">
+                        <h3 class="interview-subtitle">Vervolgstappen</h3>
+                        <p>Op basis van dit gesprek hebben wij besloten als team om het concept: learning app verder uit te werken tot eerste prototype, een vierde persona te ontwikkelen, contact op te zoeken met Rotterdam Rijnmond en werkcoaches, inzitten op taallessen en hudige probes testen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script>
+        // Interview accordion functionality
+        document.querySelectorAll('.interview-item-expandable .interview-header-toggle').forEach(header => {
+            header.addEventListener('click', function() {
+                const item = this.closest('.interview-item-expandable');
+                item.classList.toggle('active');
+            });
+        });
+    </script>    
 </body>
 </html>
