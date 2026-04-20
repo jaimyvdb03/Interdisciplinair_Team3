@@ -1,3 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header link styling */
+.header-link {
+    color: #3971B8;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 18px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-right: 8px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+.header-link:hover, .header-link:focus {
+    background: #f6e6a5;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(57,113,184,0.10);
+    text-decoration: underline;
+}
 /* Voorblad achtergrond per sprint */
 .sprint-hero-page.sprint-1-bg {
     background: url("../Images/voorblad_achtergrond/sprint1.png") no-repeat center center fixed;
@@ -497,7 +520,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 15vh;
 }
 /* product vision styling */
 .product-vision {
@@ -2367,4 +2390,15 @@ body.sprint-hero-page {
     .sprint-item {
         font-size: 14px;
     }
+}
+
+/* Huidige sprint title speciale styling */
+.huidige-sprint-title {
+    color: #3971B8;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 60px 0 30px 0;
+    text-align: center;
+    padding: 18px 0 14px 0;
 }
