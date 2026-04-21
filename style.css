@@ -23,15 +23,15 @@ html {
 }
 /* Voorblad achtergrond per sprint */
 .sprint-hero-page.sprint-1-bg {
-    background: url("../Images/voorblad_achtergrond/sprint1.png") no-repeat center center fixed;
+    background: url("Images/voorblad_achtergrond/sprint1.png") no-repeat center center fixed;
     background-size: cover;
 }
 .sprint-hero-page.sprint-2-bg {
-    background: url("../Images/voorblad_achtergrond/sprint2.png") no-repeat center center fixed;
+    background: url("Images/voorblad_achtergrond/sprint2.png") no-repeat center center fixed;
     background-size: cover;
 }
 .sprint-hero-page.sprint-3-bg {
-    background: url("../Images/voorblad_achtergrond/sprint3.png") no-repeat center center fixed;
+    background: url("Images/voorblad_achtergrond/sprint3.png") no-repeat center center fixed;
     background-size: cover;
 }
 /* Blauw vak voor probe-kaarten */
@@ -1297,7 +1297,6 @@ body {
 
 /* Sprint 1 hero layout */
 body.sprint-hero-page {
-    background: #ffffff;
     overflow-x: hidden;
 }
 
@@ -1329,6 +1328,8 @@ body.sprint-hero-page {
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 1;
+    text-align: center;
+    position: relative;
 }
 
 .sprint-title-chip {
