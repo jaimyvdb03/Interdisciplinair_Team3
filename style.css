@@ -21,18 +21,36 @@ html {
     box-shadow: 0 2px 8px rgba(57,113,184,0.10);
     text-decoration: underline;
 }
-/* Voorblad achtergrond per sprint */
-.sprint-hero-page.sprint-1-bg {
-    background: url("../Images/voorblad_achtergrond/sprint1.png") no-repeat center center fixed;
-    background-size: cover;
+/* Voorblad achtergrond per sprint — fades seamlessly into page background */
+.sprint-hero-page {
+    position: relative;
 }
-.sprint-hero-page.sprint-2-bg {
-    background: url("../Images/voorblad_achtergrond/sprint2.png") no-repeat center center fixed;
+
+.sprint-hero-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    /* Fade the image out toward the bottom, revealing the page background */
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 90%);
+    mask-image: linear-gradient(to bottom, black 0%, black 45%, transparent 90%);
+    pointer-events: none;
 }
-.sprint-hero-page.sprint-3-bg {
-    background: url("../Images/voorblad_achtergrond/sprint3.png") no-repeat center center fixed;
-    background-size: cover;
+
+.sprint-hero-page.sprint-1-bg::before {
+    background-image: url("Images/voorblad_achtergrond/sprint1.png");
+}
+.sprint-hero-page.sprint-2-bg::before {
+    background-image: url("Images/voorblad_achtergrond/sprint2.png");
+}
+.sprint-hero-page.sprint-3-bg::before {
+    background-image: url("Images/voorblad_achtergrond/sprint3.png");
 }
 /* Blauw vak voor probe-kaarten */
 .probe-kaarten-blauwvak {
@@ -1297,7 +1315,6 @@ body {
 
 /* Sprint 1 hero layout */
 body.sprint-hero-page {
-    background: #ffffff;
     overflow-x: hidden;
 }
 
@@ -1329,6 +1346,8 @@ body.sprint-hero-page {
     font-weight: 800;
     letter-spacing: 1px;
     line-height: 1;
+    text-align: center;
+    position: relative;
 }
 
 .sprint-title-chip {
