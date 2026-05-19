@@ -52,6 +52,9 @@ html {
 .sprint-hero-page.sprint-3-bg::before {
     background-image: url("Images/voorblad_achtergrond/sprint3.png");
 }
+.sprint-hero-page.sprint-4-bg::before {
+    background-image: url("Images/voorblad_achtergrond/sprint4.png");
+}
 /* Blauw vak voor probe-kaarten */
 .probe-kaarten-blauwvak {
     border: 2.5px solid #3971B8;
@@ -631,6 +634,110 @@ body {
 .info-boxes-grid .info-box:nth-child(3) {
   grid-column: 2;
   grid-row: 2;
+}
+
+/* Sprint 4 current/desired/target group layout */
+.sprint-4-current-desired-section {
+    width: 100%;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.sprint-4-current-desired-section .info-boxes-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+}
+
+.sprint-4-current-desired-section .info-box {
+    margin-top: 0;
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+    .sprint-4-current-desired-section .info-boxes-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+
+    .sprint-4-current-desired-section .info-boxes-grid .info-box:first-child,
+    .sprint-4-current-desired-section .info-boxes-grid .info-box:nth-child(2),
+    .sprint-4-current-desired-section .info-boxes-grid .info-box:nth-child(3) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+/* Sprint 4 observation section */
+.sprint4-observation-section {
+    width: 100%;
+    max-width: 1180px;
+    margin: 90px auto 60px;
+    text-align: center;
+}
+
+.sprint4-observation-title {
+    margin: 0;
+    color: #3971B8;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.sprint4-observation-underline {
+    width: min(220px, 42vw);
+    height: 8px;
+    border-radius: 999px;
+    background: #f6e6a5;
+    margin: 14px auto 26px;
+}
+
+.sprint4-observation-card {
+    text-align: left;
+    background: #f3f3f3;
+    border: 3px solid #3971B8;
+    border-radius: 22px;
+    padding: 30px 32px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.06rem;
+}
+
+.sprint4-observation-card p {
+    margin: 0;
+}
+
+.sprint4-observation-card p + p {
+    margin-top: 22px;
+}
+
+.sprint4-probe-image-wrap {
+    margin: 30px 0 0;
+}
+
+.sprint4-probe-image {
+    display: block;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    box-shadow: 0 10px 24px rgba(57, 113, 184, 0.15);
+}
+
+@media (max-width: 860px) {
+    .sprint4-observation-section {
+        margin: 64px auto 44px;
+    }
+
+    .sprint4-observation-card {
+        padding: 24px 20px;
+        font-size: 1rem;
+    }
+
+    .sprint4-probe-image-wrap {
+        margin-top: 22px;
+    }
+
+ 
 }
 
 /* Sprint Goal Section */
