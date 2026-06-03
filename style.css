@@ -668,15 +668,17 @@ body {
     }
 }
 
-/* Sprint 4 observation section */
-.sprint4-observation-section {
+/* Sprint 4 & 5 observation sections */
+.sprint4-observation-section,
+.sprint5-section {
     width: 100%;
     max-width: 1180px;
     margin: 90px auto 60px;
     text-align: center;
 }
 
-.sprint4-observation-title {
+.sprint4-observation-title,
+.sprint5-section-title {
     margin: 0;
     color: #3971B8;
     font-size: 3rem;
@@ -684,7 +686,8 @@ body {
     line-height: 1.1;
 }
 
-.sprint4-observation-underline {
+.sprint4-observation-underline,
+.sprint5-section-underline {
     width: min(220px, 42vw);
     height: 8px;
     border-radius: 999px;
@@ -692,7 +695,8 @@ body {
     margin: 14px auto 26px;
 }
 
-.sprint4-observation-card {
+.sprint4-observation-card,
+.sprint5-section-card {
     text-align: left;
     background: #f3f3f3;
     border: 3px solid #3971B8;
@@ -703,11 +707,13 @@ body {
     font-size: 1.06rem;
 }
 
-.sprint4-observation-card p {
+.sprint4-observation-card p,
+.sprint5-section-card p {
     margin: 0;
 }
 
-.sprint4-observation-card p + p {
+.sprint4-observation-card p + p,
+.sprint5-section-card p + p {
     margin-top: 22px;
 }
 
@@ -724,11 +730,13 @@ body {
 }
 
 @media (max-width: 860px) {
-    .sprint4-observation-section {
+    .sprint4-observation-section,
+    .sprint5-section {
         margin: 64px auto 44px;
     }
 
-    .sprint4-observation-card {
+    .sprint4-observation-card,
+    .sprint5-section-card {
         padding: 24px 20px;
         font-size: 1rem;
     }
@@ -738,6 +746,132 @@ body {
     }
 
  
+}
+
+/* Sprint 4 Ontwerpen section */
+.sprint4-design-section {
+    width: 100%;
+    max-width: 1180px;
+    margin: 90px auto 60px;
+    text-align: center;
+}
+
+.sprint4-design-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+    margin-top: 32px;
+}
+
+.sprint4-design-duo-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.sprint5-images {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 32px;
+}
+
+.sprint5-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+.sprint5-img {
+    height: 420px;
+    width: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(57, 113, 184, 0.15);
+}
+
+.sprint5-img-caption {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3971B8;
+    background: #e8f0fb;
+    border-radius: 999px;
+    padding: 4px 18px;
+}
+
+.sprint4-design-caption {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3971B8;
+    text-align: center;
+    background: #e8f0fb;
+    border-radius: 999px;
+    padding: 4px 18px;
+}
+
+.sprint4-design-text {
+    text-align: left;
+    background: #f3f3f3;
+    border: 3px solid #3971B8;
+    border-radius: 16px;
+    padding: 32px 36px;
+    font-size: 1.06rem;
+    line-height: 1.7;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sprint4-design-text p {
+    margin: 0;
+}
+
+.sprint4-design-text p + p {
+    margin-top: 22px;
+}
+
+.sprint4-design-image-wrap {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sprint4-design-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(57, 113, 184, 0.15);
+}
+
+@media (max-width: 860px) {
+    .sprint4-design-section {
+        margin: 64px auto 44px;
+    }
+
+    .sprint4-design-duo {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    @media (max-width: 1100px) and (min-width: 861px) {
+        .sprint4-design-duo {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .sprint4-design-text {
+        padding: 24px 20px;
+        font-size: 1rem;
+    }
 }
 
 /* Sprint Goal Section */

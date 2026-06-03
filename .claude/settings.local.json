@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(dir \"C:\\\\Users\\\\spron\\\\Downloads\\\\School\\\\Slimme sociale stad\\\\onepagrer\\\\Interdisciplinair_Team3\\\\Images\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(cmd /c \"dir /s /b \"\"C:\\\\Users\\\\spron\\\\Downloads\\\\School\\\\Slimme sociale stad\\\\onepagrer\\\\Interdisciplinair_Team3\\\\Images\"\"\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(git checkout *)"
+    ]
+  }
+}
