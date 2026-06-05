@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sprint 1</title>
+	<title>Sprint 5</title>
 	<script src="../sprint-dropdown.js"></script>
-	<script src="header-scroll.js"></script>
+	<script src="../header-scroll.js"></script>
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body class="sprint-hero-page">
@@ -21,6 +21,7 @@
                     <span class="header-subtitle">Hogeschool Rotterdam</span>
                 </div>
                 <div class="header-badges ">
+                    <a href="../index.html" class="header-link">Home</a>
                     <div class="dropdown">
                         <button class="badge badge-blue" id="sprintDropdownBtn">Sprints</button>
                         <div id="sprintDropdownMenu" class="dropdown-menu">
@@ -49,7 +50,7 @@
             <div class="sprint-cards">
                 <article class="sprint-card sprint-card-period">
                     <p class="sprint-card-label highlight-blue">
-                        <img src="../images/icons/Container_afspraken_secondairy.png" alt="Periode icoon" class="sprint-card-label-icon">
+                        <img src="../Images/icons/Container_afspraken_secondairy.png" alt="Periode icoon" class="sprint-card-label-icon">
                         Periode
                     </p>
                     <p class="sprint-card-value">Week 14-15</p>
@@ -58,7 +59,7 @@
 
                 <article class="sprint-card sprint-card-focus">
                     <p class="sprint-card-label highlight-yellow">
-						<img src="../images/icons/Container_rocket_secondairy.png" alt="Focus icoon" class="sprint-card-label-icon">
+						<img src="../Images/icons/Container_rocket_secondairy.png" alt="Focus icoon" class="sprint-card-label-icon">
 						Focus
 					</p>
                     <p class="sprint-card-value">Onderzoek</p>
@@ -72,7 +73,7 @@
 			<div class="dq-outer">
 				<div class="dq-card">
 					<span class="dq-label"><strong>ONTWERPVRAAG</strong></span>
-					<p></p>
+					<p>Hoe kunnen wij een digitaal toegankelijke tool bouwen die 25- tot 45-jarige laaggeletterden leert hoe het sollicatieproces werkt?</p>
 				</div>
 			</div>
 		</section>
@@ -88,10 +89,10 @@
                         <span class="scope-title">Binnen scope</span>
                     </div>
                     <ul class="scope-list">
-                        <li><span class="scope-icon in">✔</span>-</li>
-                        <li><span class="scope-icon in">✔</span>-</li>
-                        <li><span class="scope-icon in">✔</span>-</li>
-                        <li><span class="scope-icon in">✔</span>-</li>
+                        <li><span class="scope-icon in">✔</span>Eindproduct coderen</li>
+                        <li><span class="scope-icon in">✔</span>Testen van het product</li>
+                        <li><span class="scope-icon in">✔</span>Feedback verwerken</li>
+                        <li><span class="scope-icon in">✔</span>Documentatie</li>
                     </ul>
                 </div>
 
@@ -101,14 +102,70 @@
                         <span class="scope-title">Buiten scope</span>
                     </div>
                     <ul class="scope-list">
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
+                        <li><span class="scope-icon out">✕</span>UI-tests maken voor alle componenten</li>
+                        <li><span class="scope-icon out">✕</span>Alle lessen/oefeningen uitwerken</li>
+                        <li><span class="scope-icon out">✕</span>Hulp nodig AI Bot</li>
+                        <li><span class="scope-icon out">✕</span>Voortgang bar werkend maken</li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <!-- Sprintdoel Section -->
+        <section class="design-question-section">
+            <div class="dq-outer">
+                <div class="dq-card">
+                    <span class="dq-label"><strong>Sprintdoel</strong></span>
+					<p>In deze sprint willen wij het eindproduct bouwen en testen met de doelgroep en onze documentatie op orde krijgen. Als laatste willen we het volledige project laten zien op de eindexpo</p>
+            </div>
+        </section>
+
+        <!-- Coderen Section -->
+        <section class="sprint5-section" aria-labelledby="coderen-title">
+            <h2 id="coderen-title" class="sprint5-section-title">Coderen</h2>
+            <div class="sprint5-section-underline" aria-hidden="true"></div>
+
+            <div class="sprint5-section-card">
+                <p>Het ontwerpen was afgelopen sprint afgerond en in deze sprint was het de taak om het ontwerp om te zetten naar werkende code. We hebben gekozen om React te gebruiken als framework, omdat we een webapplicatie wilden bouwen en het grootste deel van het groepje hier al mee bekend was, waardoor we er snel mee konden starten. Daarnaast hebben we gekozen om Tailwind te gebruiken, zodat we minder losse CSS-bestanden hoefden te schrijven en sneller visuele onderdelen konden maken. Bij het ontwerpen hadden we alleen rekening gehouden met een telefoonversie, omdat een telefoon toegankelijker is en mensen vaker een telefoon hebben dan een computer of iets dergelijks. Bij het coderen moesten we daarom ook een desktopversie toevoegen, waardoor we het ontwerp responsive hebben gemaakt.</p>
+            </div>
+
+            <div class="sprint5-images">
+                <figure class="sprint5-image-item">
+                    <img src="../Images/Applicatie/Homepage webpagina.png" alt="Applicatie: Homepage desktop" class="sprint5-img">
+                    <figcaption class="sprint5-img-caption">Homepage — desktop</figcaption>
+                </figure>
+                <figure class="sprint5-image-item">
+                    <img src="../Images/Applicatie/Homepage webpagina telefoon.png" alt="Applicatie: Homepage telefoon" class="sprint5-img">
+                    <figcaption class="sprint5-img-caption">Homepage — telefoon</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Observeren bij NL Training Section -->
+        <section class="sprint5-section" aria-labelledby="observation-title-s5">
+            <h2 id="observation-title-s5" class="sprint5-section-title">Observeren bij NL Training</h2>
+            <div class="sprint5-section-underline" aria-hidden="true"></div>
+
+            <div class="sprint5-section-card">
+                <p>Wij hebben deze sprint weer onderzoek gedaan bij NLtraining naar onze doelgroep: werkzoekende laaggeletterden. We hebben gesproken met laaggeletterde mensen die de stof uit de applicatie al hebben gehad in lessen, en met een aantal die het nog niet hebben gehad. Door samenlopende feestdagen waren er deze keer minder gevorderde cursisten aanwezig.</p>
+                <p>De gevorderde cursist vertelde dat de stof heel duidelijk was en precies aansluit op wat zij ook krijgen bij NLtraining. De taal was simpel en makkelijk te volgen en de lesstof zelf werd als eenvoudig ervaren. De sollicitatie-oefenfunctie werd in theorie goed gevonden, maar voelde in de praktijk te lang, vooral omdat je niet kunt oefenen op een functie waarvoor je daadwerkelijk zou willen trainen. De feedback van de applicatie op fout beantwoorde vragen en op de oefenfunctie werd juist als erg prettig ervaren. Daarnaast is gevraagd om meer talen toe te voegen, zoals Oekraiens en Pools.</p>
+                <p>De tweede groep bestond uit twee laaggeletterde cursisten die deze stof nog niet vanuit NLtraining hadden ontvangen. Zij hebben de les "Leren CV maken" en de bijbehorende oefeningen doorlopen. Deze groep vond de lesstof en vragen goed te begrijpen, maar ervaarde wel moeite met standaard CV-termen zoals "werkervaring".</p>
+            </div>
+
+            <figure class="sprint4-probe-image-wrap">
+                <img src="../Images/NLTraining 28-5.png" alt="Observeren bij NL Training" class="sprint4-probe-image">
+            </figure>
+        </section>
+
+        <!-- Documentatie Section -->
+        <section class="sprint5-section" aria-labelledby="documentatie-title">
+            <h2 id="documentatie-title" class="sprint5-section-title">Documentatie</h2>
+            <div class="sprint5-section-underline" aria-hidden="true"></div>
+
+            <div class="sprint5-section-card">
+            <p>Er is veel focus geweest op documentatie tijdens deze sprint. Dit was de laatste sprint van het project en we hadden nog wat documentatie op orde te krijgen. Hieronder valt een advies- en risicorapport, testrapport, onderzoeksrapport en het overdrachtsdocument.</p>            </div>
+        </section>
+
     </main>
 </body>
 </html>

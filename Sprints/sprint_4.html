@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sprint 1</title>
+	<title>Sprint 4</title>
 	<script src="../sprint-dropdown.js"></script>
-	<script src="header-scroll.js"></script>
+	<script src="../header-scroll.js"></script>
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body class="sprint-hero-page sprint-4-bg">
@@ -21,6 +21,7 @@
                     <span class="header-subtitle">Hogeschool Rotterdam</span>
                 </div>
                 <div class="header-badges ">
+                    <a href="../index.html" class="header-link">Home</a>
                     <div class="dropdown">
                         <button class="badge badge-blue" id="sprintDropdownBtn">Sprints</button>
                         <div id="sprintDropdownMenu" class="dropdown-menu">
@@ -49,7 +50,7 @@
             <div class="sprint-cards">
                 <article class="sprint-card sprint-card-period">
                     <p class="sprint-card-label highlight-blue">
-                        <img src="../images/icons/Container_afspraken_secondairy.png" alt="Periode icoon" class="sprint-card-label-icon">
+                        <img src="../Images/icons/Container_afspraken_secondairy.png" alt="Periode icoon" class="sprint-card-label-icon">
                         Periode
                     </p>
                     <p class="sprint-card-value">Week 12-13</p>
@@ -58,7 +59,7 @@
 
                 <article class="sprint-card sprint-card-focus">
                     <p class="sprint-card-label highlight-yellow">
-						<img src="../images/icons/Container_rocket_secondairy.png" alt="Focus icoon" class="sprint-card-label-icon">
+						<img src="../Images/icons/Container_rocket_secondairy.png" alt="Focus icoon" class="sprint-card-label-icon">
 						Focus
 					</p>
                     <p class="sprint-card-value">Development</p>
@@ -88,7 +89,7 @@
                         <span class="scope-title">Binnen scope</span>
                     </div>
                     <ul class="scope-list">
-                        <li><span class="scope-icon in">✔</span>Eindproduct bouwen</li>
+                        <li><span class="scope-icon in">✔</span>Eindproduct ontwerpen & bouwen</li>
                         <li><span class="scope-icon in">✔</span>Risicoanalyse uitvoeren</li>
                         <li><span class="scope-icon in">✔</span>Testen van het product</li>
                         <li><span class="scope-icon in">✔</span>Feedback verwerken</li>
@@ -101,10 +102,9 @@
                         <span class="scope-title">Buiten scope</span>
                     </div>
                     <ul class="scope-list">
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
-                        <li><span class="scope-icon out">✕</span>-</li>
+                        <li><span class="scope-icon out">✕</span>Documentatie</li>
+                        <li><span class="scope-icon out">✕</span>Volledig eindproduct</li>
+                        <li><span class="scope-icon out">✕</span>Eind expo voorbereiden</li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +112,7 @@
 
          <!-- Huidige situatie, Gewenste situatie en Doelgroep Section -->
         <section class="current-desired-section sprint-4-current-desired-section">
-            <h2 class="section-title">Huidige situatie &Gewenste situatie</h2>
+            <h2 class="section-title">Huidige situatie & Gewenste situatie</h2>
             <div class="info-boxes-grid">
                 <div class="info-box">
                     <div class="box-header blue-dot">HUIDGE SITUATIE</div>
@@ -143,10 +143,33 @@
 			<div class="dq-outer">
 				<div class="dq-card">
 					<span class="dq-label"><strong>Sprintdoel</strong></span>
-					<p>In deze sprint beginnen wij met het opbouwen van ons eindproduct & het testen bij de doelgroep. </p>
-				</div>
-			</div>
+                    <p>In deze sprint willen wij de probes bij de doelgroep testen en het prototype ontwerpen en een begin maken met coderen van het eindproduct.</p>			</div>
 		</section>
+
+        <!-- Ontwerpen Section -->
+        <section class="sprint4-design-section" aria-labelledby="design-title">
+            <h2 id="design-title" class="sprint4-observation-title">Ontwerpen</h2>
+            <div class="sprint4-observation-underline" aria-hidden="true"></div>
+
+            <div class="sprint4-design-text">
+                <p>We zijn deze sprint begonnen met het ontwerpen van ons eindproduct. Ons doel was om een gebruiksvriendelijk en toegankelijk design te maken dat aansluit op de behoeften van onze doelgroep. Hiervoor hebben we gekeken naar het design van LeesSimpel, een platform dat vaak wordt gebruikt door de doelgroep. Het ontwerp moest simpel, duidelijk en niet afleidend zijn — met tekst én beeld, zodat het ook begrijpelijk is voor mensen die minder goed kunnen lezen.</p>
+            </div>
+
+            <div class="sprint4-design-duo">
+                <figure class="sprint4-design-duo-item">
+                    <img src="../Images/Figma_ontwerp/Homepage Figma Ontwerp.png" alt="Voorbeeldpagina: Homepage" class="sprint4-design-image">
+                    <figcaption class="sprint4-design-caption">Voorbeeldpagina: Homepage</figcaption>
+                </figure>
+                <figure class="sprint4-design-duo-item">
+                    <img src="../Images/Figma_ontwerp/Lespage  Figma Ontwerp.png" alt="Voorbeeldpagina: Lespagina" class="sprint4-design-image">
+                    <figcaption class="sprint4-design-caption">Voorbeeldpagina: Lespagina</figcaption>
+                </figure>
+                <figure class="sprint4-design-duo-item">
+                    <img src="../Images/Figma_ontwerp/Kleding en gedrag Quiz vraag.png" alt="Voorbeeldpagina: Quiz vraag" class="sprint4-design-image">
+                    <figcaption class="sprint4-design-caption">Voorbeeldpagina: Quiz vraag</figcaption>
+                </figure>
+            </div>
+        </section>
 
         <!-- Observeren bij NL Training Section -->
         <section class="sprint4-observation-section" aria-labelledby="observation-title">
@@ -168,6 +191,14 @@
                 <img src="../images/Probe_testing.PNG" alt="Probe testing met de doelgroep" class="sprint4-probe-image">
             </figure>
         </section>
+
+        <!-- Requirements Document Section -->
+        <section class="sprint4-observation-section" aria-labelledby="requirements-title">
+            <h2 id="requirements-title" class="sprint4-observation-title">Requirements Document</h2>
+            <div class="sprint4-observation-underline" aria-hidden="true"></div>
+
+            <div class="sprint4-observation-card">
+            <p>Wij hebben een requirements document opgesteld waarin de behoeften en verwachtingen van onze doelgroep zijn vastgelegd. Hierin hebben wij zowel de functionele requirements als de UI/UX requirements uitgewerkt. Dit document vormt de basis voor het ontwerp en de ontwikkeling van de applicatie, zodat duidelijk is aan welke eisen het eindproduct moet voldoen.</p>        </section>
 
     </main>
 </body>

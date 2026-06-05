@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sprint 1</title>
+	<title>Sprint 2</title>
 	<script src="../sprint-dropdown.js"></script>
-	<script src="header-scroll.js"></script>
+	<script src="../header-scroll.js"></script>
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body class="sprint-hero-page sprint-2-bg">
@@ -21,6 +21,7 @@
                     <span class="header-subtitle">Hogeschool Rotterdam</span>
                 </div>
                 <div class="header-badges ">
+                    <a href="../index.html" class="header-link">Home</a>
                     <div class="dropdown">
                         <button class="badge badge-blue" id="sprintDropdownBtn">Sprints</button>
                         <div id="sprintDropdownMenu" class="dropdown-menu">
@@ -89,9 +90,10 @@
                     </div>
                     <ul class="scope-list">
                         <li><span class="scope-icon in">✔</span>Stakeholders in kaart brengen</li>
-                        <li><span class="scope-icon in">✔</span>Aannames maken</li>
+                        <li><span class="scope-icon in">✔</span>Concepten maken</li>
                         <li><span class="scope-icon in">✔</span>Persona's ontwikkelen</li>
                         <li><span class="scope-icon in">✔</span>Probe opzetten</li>
+                        <li><span class="scope-icon in">✔</span>Interview Praktijkpartner</li>
                     </ul>
                 </div>
 
@@ -107,6 +109,15 @@
                         <li><span class="scope-icon out">✕</span>Deployment naar productie</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- Sprintdoel Section -->
+        <section class="design-question-section">
+            <div class="dq-outer">
+                <div class="dq-card">
+                    <span class="dq-label"><strong>Sprintdoel</strong></span>
+                    <p>In deze sprint willen wij een probe opstellen om te onderzoeken waar laaggeletterden vastlopen binnen het sollicitatieproces.</p>                </div>
             </div>
         </section>
 
@@ -614,6 +625,69 @@
                 <span class="dot" onclick="currentPersona(2)"></span>
                 <span class="dot" onclick="currentPersona(3)"></span>
                 <span class="dot" onclick="currentPersona(4)"></span>
+            </div>
+        </section>
+
+        <!-- Concept 1 Section -->
+        <section class="sprint4-observation-section" aria-labelledby="concept1-title">
+            <h2 id="concept1-title" class="section-title">Concept 1</h2>
+            <div class="sprint4-observation-card">
+                <p>Er zijn een paar concepten ontwikkeld om te kijken wat wel werkt en wat niet. In dit concept was het idee om een probe te maken door middel van het nabootsen van een website waar mensen vacatures zoeken. Zo konden we meer controle hebben over de ervaring en met behulp van data kijken waar ze op vastlopen. Dit concept is uiteindelijk geschrapt, omdat er was onderschat hoeveel werk dit zou zijn. Daarnaast bleek dat het gebruik van de echte website beter aansluit bij een authentieke ervaring, terwijl je als onderzoeker persoonlijk mee kunt kijken waar gebruikers vastlopen.</p>
+            </div>
+            <figure class="sprint4-probe-image-wrap">
+                <img src="../Images/Concepten/Concept 1.png" alt="Concept 1" class="sprint4-probe-image">
+            </figure>
+        </section>
+
+        <!-- Concept 2 Section -->
+        <section class="sprint4-observation-section" aria-labelledby="concept2-title">
+            <h2 id="concept2-title" class="section-title">Concept 2</h2>
+            <div class="sprint4-observation-card">
+            <p>Een ander concept was het ontwikkelen van een CV-maker. De bedoeling hiervan is dat deze zo laagdrempelig mogelijk is voor laaggeletterde mensen. Er bestaan al CV-tools, maar deze zijn vaak niet specifiek ontworpen voor deze doelgroep en daardoor te ingewikkeld in gebruik.</p>            </div>
+            <div class="sprint5-images">
+                <figure class="sprint5-image-item">
+                    <img src="../Images/Concepten/Concept 2.1.png" alt="Concept 2.1" class="sprint5-img">
+                </figure>
+                <figure class="sprint5-image-item">
+                    <img src="../Images/Concepten/Concept 2.2.png" alt="Concept 2.2" class="sprint5-img">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Concept 3 Section -->
+        <section class="sprint4-observation-section" aria-labelledby="concept3-title">
+            <h2 id="concept3-title" class="section-title">Concept 3</h2>
+            <div class="sprint4-observation-card">
+                <p>Nog een concept was een mobiele learning app met korte, visuele en interactieve lessen (1–2 minuten) die gebruikers begeleiden door het sollicitatieproces. De app richt zich op leren door zien, horen en doen, in plaats van lezen.</p>
+            </div>
+        </section>
+
+        <!-- Probe Section -->
+        <section class="sprint4-observation-section" aria-labelledby="probe-title">
+            <h2 id="probe-title" class="section-title">Probe</h2>
+            <div class="sprint4-observation-card">
+            <p>Deze probe richt zich op hoe laaggeletterden een online sollicitatieproces doorlopen via het platform Indeed. Het proces bestaat uit meerdere stappen, zoals te zien is in het stappenplan. We beginnen met een aantal introductievragen om de deelnemer beter te leren kennen. Daarna gaat de deelnemer op een laptop op zoek naar een vacature op Indeed. Hierbij krijgt de deelnemer een stappenplan dat gebruikt kan worden als spiekbriefje wanneer dat nodig is. Tijdens het uitvoeren van de opdracht observeren we waar deelnemers vastlopen, welke stappen moeilijk zijn en waar eventueel hulp nodig is. Na afloop stellen we nog een aantal vragen over hun ervaring. We verwachten dat laaggeletterden moeite kunnen hebben met het begrijpen van instructies, het navigeren door digitale omgevingen en het beantwoorden van (open) vragen. De inzichten uit deze observaties helpen ons om beter te begrijpen welke problemen deze doelgroep ervaart en hoe we een toegankelijker en inclusiever sollicitatieproces kunnen ontwerpen.</p>            </div>
+            <div class="probe-images-grid">
+                <figure>
+                    <img src="../Images/Indeed_probe/Vragenlijst.png" alt="Probe: Vragenlijst">
+                    <figcaption class="sprint5-img-caption">Vragenlijst</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Images/Indeed_probe/Spiekbrief Stappenplan.png" alt="Probe: Spiekbrief Stappenplan">
+                    <figcaption class="sprint5-img-caption">Spiekbrief Stappenplan</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Images/Indeed_probe/Evaluatie formuleer.png" alt="Probe: Evaluatie formulier">
+                    <figcaption class="sprint5-img-caption">Evaluatie formulier</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Interview Tanja Section -->
+        <section class="sprint4-observation-section" aria-labelledby="tanja-title">
+            <h2 id="tanja-title" class="section-title">Interview Tanja</h2>
+            <div class="sprint4-observation-card">
+                <p>Tanja is van Living Without Letters. In ons gesprek met haar wilden we onze probe laten zien en feedback krijgen op onze aanpak. Hieruit hebben we veel geleerd over hoe laaggeletterden omgaan met digitale producten en waar zij tegenaan lopen. Zo gaf zij aan dat mensen soms niet durven te klikken op dingen die er anders uitzien, en dat sommige gebruikers moeite hebben met basis dingen zoals navigeren of klikken. Ook werd duidelijk dat mensen soms zeggen dat ze iets begrijpen, maar dat niet altijd zo is. Daarnaast wees ze op het verschil tussen telefoon en laptop, waarbij een telefoon vaak toegankelijker is voor deze doelgroep. Verder hebben we geleerd dat het belangrijk is dat een product simpel en aantrekkelijk is, anders haken mensen sneller af. Ook gaf ze aan dat het goed is om samen met de doelgroep te ontwerpen in plaats van alleen voor hen. Op basis van deze inzichten hebben we besloten om onze probe aan te passen en een nieuwe probe te maken met kaartjes, zoals Tanja aanraadde.</p>
             </div>
         </section>
 
